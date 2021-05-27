@@ -1,0 +1,63 @@
+{
+    "UserAgent": "aws-amplify-cli/2.0",
+    "Version": "1.0",
+    "api": {
+        "plugins": {
+            "awsAPIPlugin": {
+                "Hungers": {
+                    "endpointType": "GraphQL",
+                    "endpoint": "https://bisebx4bzjbvhhzhnpe5httbxe.appsync-api.ap-south-1.amazonaws.com/graphql",
+                    "region": "ap-south-1",
+                    "authorizationType": "API_KEY",
+                    "apiKey": "da2-bul7r2k6rrbntluudml4ksbi4q"
+                }
+            }
+        }
+    },
+    "auth": {
+        "plugins": {
+            "awsCognitoAuthPlugin": {
+                "UserAgent": "aws-amplify-cli/0.1.0",
+                "Version": "0.1.0",
+                "IdentityManager": {
+                    "Default": {}
+                },
+                "CredentialsProvider": {
+                    "CognitoIdentity": {
+                        "Default": {
+                            "PoolId": "ap-south-1:ac7cc205-9584-4414-843b-ed9d2fc1267f",
+                            "Region": "ap-south-1"
+                        }
+                    }
+                },
+                "CognitoUserPool": {
+                    "Default": {
+                        "PoolId": "ap-south-1_mbVCerul2",
+                        "AppClientId": "5jodu134106an87m3sv2m0df2t",
+                        "Region": "ap-south-1"
+                    }
+                },
+                "Auth": {
+                    "Default": {
+                        "authenticationFlowType": "USER_SRP_AUTH"
+                    }
+                },
+                "AppSync": {
+                    "Default": {
+                        "ApiUrl": "https://bisebx4bzjbvhhzhnpe5httbxe.appsync-api.ap-south-1.amazonaws.com/graphql",
+                        "Region": "ap-south-1",
+                        "AuthMode": "API_KEY",
+                        "ApiKey": "da2-bul7r2k6rrbntluudml4ksbi4q",
+                        "ClientDatabasePrefix": "Hungers_API_KEY"
+                    },
+                    "Hungers_AWS_IAM": {
+                        "ApiUrl": "https://bisebx4bzjbvhhzhnpe5httbxe.appsync-api.ap-south-1.amazonaws.com/graphql",
+                        "Region": "ap-south-1",
+                        "AuthMode": "AWS_IAM",
+                        "ClientDatabasePrefix": "Hungers_AWS_IAM"
+                    }
+                }
+            }
+        }
+    }
+}

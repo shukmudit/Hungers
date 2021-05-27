@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Hungers</string>
+    <string name="todo">image</string>
+    <string name="checkout">Checkout</string>
+    <string name="hungers">hungers</string>
+    <string name="login_txt">Login</string>
+    <string name="register">Login with Google</string>
+    <string name="submit">Submit</string>
+    <string name="home">Home</string>
+    <string name="address">address</string>
+    <string name="cart">cart</string>
+    <string name="get_otp">Submit</string>
+    <string name="default_address">default address</string>
+    <string name="reset">Reset</string>
+</resources>
