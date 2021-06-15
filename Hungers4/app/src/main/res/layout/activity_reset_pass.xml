@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_hungers"
+    tools:context=".ResetPass">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/hunger_logo_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/hunger_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/algerian"
+        android:text="@string/hungers"
+        android:textColor="@color/offwhite"
+        android:textFontWeight="600"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:textAllCaps="true" />
+
+    <View
+        android:id="@+id/underline"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/button_login"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/hunger_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hunger_txt" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/calibri"
+        android:text="simplicity at its best"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textFontWeight="600"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hunger_txt" />
+    <View
+        android:id="@+id/view"
+        android:layout_width="340dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/hunger_txt"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/hunger_txt"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/calibri"
+        android:text="@string/reset"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/input_cnfm_pass" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="250dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/button_login"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/button_reset" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/divider"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corners"
+        android:fontFamily="@font/calibri"
+        android:text="@string/login_txt"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_new_pass"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="NEW PASSWORD"
+        android:textSize="14dp"
+        android:fontFamily="@font/calibri"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/input_cnfm_pass"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/calibri"
+        android:hint="CONFIRM PASSWORD"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/input_new_pass" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/copywright_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powered By EleJunx Elecronic"
+        android:textColor="@color/black"
+        android:fontFamily="@font/calibri"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></androidx.appcompat.widget.AppCompatTextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
